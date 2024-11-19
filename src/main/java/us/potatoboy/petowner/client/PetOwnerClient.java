@@ -32,6 +32,8 @@ public class PetOwnerClient implements ClientModInitializer {
 
 	public static boolean enabled = true;
 	public static KeyBinding keyBinding;
+	public static Entity useEntity;
+	public static float tickDelta;
 
 	private static final LoadingCache<UUID, Optional<String>> usernameCache = CacheBuilder
 			.newBuilder()
